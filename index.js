@@ -99,19 +99,4 @@ function placeOrder(cardNumber) {
   }
 
 
-  // var total = 0;
-  // var int = parseInt(cart.length);
-  // for (let x = 0; x < int; x++) {
-  //   total = total + parseInt(cart[x].itemPrice);
-  // }
-
-  //var int = parseInt(cart.length);
-  // var i = 0;
-  // while(int > i) {
-  //   cart.splice(i, 1);
-  //   ++i;
-  // }
-
-
-  //return "Sorry, we don't have a credit card on file for you.";
 }
