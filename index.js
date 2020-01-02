@@ -85,8 +85,6 @@ function removeFromCart(item) {
 }
 
 
-
-
 function placeOrder(cardNumber) {
   // write your code here
 
@@ -109,7 +107,6 @@ function placeOrder(cardNumber) {
     cart.splice(i, 1);
     ++i;
   }
-
 
   return "Your total cost is " + "$" + total + ", which will be charged to the card " + cardNumber + ".";
 }
