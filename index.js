@@ -88,12 +88,12 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 
-  //if(cardNumber == "") {
-    //return "Sorry, we don't have a credit card on file for you.";
+  if(cardNumber === NaN) {
+    return "Sorry, we don't have a credit card on file for you.";
     //return "Your total cost is " + "$" + total + ", which will be charged to the card " + cardNumber + ".";
-  //}
+  }
 
-  let total;
+  let total = 0;
   var int = parseInt(cart.length);
   for (let x = 0; x < int; x++) {
     total = total + parseInt(cart[x].itemPrice);
