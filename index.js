@@ -96,7 +96,7 @@ function placeOrder(cardNumber) {
   //let total = 0;
   var int = parseInt(cart.length);
   for (let x = 0; x < int; x++) {
-    let total += parseInt(cart[x].itemPrice);
+    let total = total + parseInt(cart[x].itemPrice);
   }
 
   var int = parseInt(cart.length);
