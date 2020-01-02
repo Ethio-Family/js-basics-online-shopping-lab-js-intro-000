@@ -94,7 +94,7 @@ function placeOrder(cardNumber) {
   }
   else{
     var tot = total();
-    setCart(cart);
+    setCart([]);
     return "Your total cost is " + "$" + tot + ", which will be charged to the card " + cardNumber + ".";
   }
 
