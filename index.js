@@ -93,10 +93,10 @@ function placeOrder(cardNumber) {
     //return "Your total cost is " + "$" + total + ", which will be charged to the card " + cardNumber + ".";
   //}
 
-  let total = 0;
+  //let total = 0;
   var int = parseInt(cart.length);
   for (let x = 0; x < int; x++) {
-    total += parseInt(cart[x].itemPrice);
+    let total += parseInt(cart[x].itemPrice);
   }
 
   var int = parseInt(cart.length);
