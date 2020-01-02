@@ -92,20 +92,25 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you.";
     //return "Your total cost is " + "$" + total + ", which will be charged to the card " + cardNumber + ".";
   }
-
-  var total = 0;
-  var int = parseInt(cart.length);
-  for (let x = 0; x < int; x++) {
-    total = total + parseInt(cart[x].itemPrice);
+  else{
+    var tot = total();
+    return "Your total cost is " + "$" + tot + ", which will be charged to the card " + cardNumber + ".";
   }
+
+
+  // var total = 0;
+  // var int = parseInt(cart.length);
+  // for (let x = 0; x < int; x++) {
+  //   total = total + parseInt(cart[x].itemPrice);
+  // }
 
   //var int = parseInt(cart.length);
-  var i = 0;
-  while(int > i) {
-    cart.splice(i, 1);
-    ++i;
-  }
+  // var i = 0;
+  // while(int > i) {
+  //   cart.splice(i, 1);
+  //   ++i;
+  // }
 
-  return "Your total cost is " + "$" + total + ", which will be charged to the card " + cardNumber + ".";
+
   //return "Sorry, we don't have a credit card on file for you.";
 }
