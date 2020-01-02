@@ -99,10 +99,8 @@ function placeOrder(cardNumber) {
     total = total + parseInt(cart[x].itemPrice);
   }
 
-  var int = parseInt(cart.length);
+  //var int = parseInt(cart.length);
   var i = 0;
-
-
   while(int > i) {
     cart.splice(i, 1);
     ++i;
